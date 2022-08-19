@@ -1,4 +1,4 @@
-require_relative 'MyEnumerable'
+require_relative 'my_enumerable'
 
 class MyList
   include MyEnumerable
@@ -22,5 +22,3 @@ list.any? { |e| e == 2 }
 list.any? { |e| e == 5 }
 
 puts list.filter(&:even?)
-
-
