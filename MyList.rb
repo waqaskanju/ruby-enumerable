@@ -1,23 +1,13 @@
+require_relative './Module'
+
 class MyList
-
-    @list
-
-
-    module MyEnumerable
-     
-    def  all?
-
-    end
-   
-    def any?
-
-    end
-    def filter
+  include MyEnumerable
+  def initialize(*list)
+    @list = list
+  end
     
-    end
+  def each(&block)
+    @list.each(&block)
+  end
 
 end
-  
-    
-  end
-  
